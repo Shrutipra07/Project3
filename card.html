@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Design</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .card {            
+            box-shadow: 1px 3px 5px black;
+            margin: 0 5px;
+            width: 300px;
+            height: 370px;
+            border-radius: 20px;
+            text-align: center;
+            transition: .5s ease-in-out;
+            justify-content: center;
+            animation: rotatearount 1s;
+
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            margin: 5px auto;
+            display: block;
+        }
+
+        .card ul {
+            list-style: none;
+            display: flex;
+            margin-left: 30px;
+
+        }
+
+        .card ul li {
+            padding: 0 8px;
+            color: blue;
+
+        }
+
+        .card h3 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .card p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: -15px;
+            text-align: center;
+        }
+
+        .btn {
+            justify-content: center;
+            text-align: center;
+            padding: 17px 0;
+            width: 100%;
+            background: blueviolet;
+            border: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px; 
+            transition: 0.5s;         
+        }
+        .btn:hover{
+            background: green;
+            transform: translate(0px, -8px);
+
+        }
+        
+        .card:hover {
+            transform: translate(0,-18px);
+        }
+
+        @keyframes rotatearount{
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        @media screen and (max-width:1000px) {
+            .card{
+                width: 50% 50%;
+            }
+        }
+        @media screen and (max-width:750px) {
+            .card{
+                width: 100%;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="card">
+            <img src="/images/logos/clojure.png">
+            <h3>Closure</h3>
+            <p>$550.00</p>
+            <ul>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="/images/logos/node.png">
+            <h3>Node JS</h3>
+            <p>$600.00</p>
+            <ul>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="/images/logos/ruby.png">
+            <h3>Ruby</h3>
+            <p>$200.00</p>
+            <ul>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="/images/logos/python.png">
+            <h3>Python</h3>
+            <p>$100.00</p>
+            <ul>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <button class="btn">Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
